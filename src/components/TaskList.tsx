@@ -26,11 +26,9 @@ export function TaskList() {
         title: newTaskTitle,
         isComplete: false,
       }
-
-      tasks.push(task);
+  
+      setTasks([...tasks, task]);
     }
-
-    setTasks(tasks);
   }
 
   function handleToggleTaskCompletion(id: number) {
